@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Value: 0
   windSpeed:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 10
   fogType:
     m_OverrideState: 1
     m_Value: 0
@@ -163,10 +163,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   type:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   sphericalMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   seaLevel:
     m_OverrideState: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 6378100
   planetCenterPosition:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: -6378100, z: 0}
   airDensityR:
     m_OverrideState: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   planetRotation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: 0, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 0
