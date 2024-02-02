@@ -84,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
         #region Rotation
         characterController.Move(moveDirection * Time.deltaTime);
 
-
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -90, 65);
         playerCam.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
