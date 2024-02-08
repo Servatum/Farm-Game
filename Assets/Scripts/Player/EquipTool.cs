@@ -19,6 +19,8 @@ public class EquipTool : Equip
     private Animator anim;
     private Camera cam;
 
+    [SerializeField] HarvestType[] harvestTypes;
+
     void Awake()
     {
         //get our components
@@ -51,13 +53,25 @@ public class EquipTool : Equip
             //did we hit a resource?
             if(doesGatherResources && hit.collider.GetComponent<Resource>())
             {
-                hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
+                CollectResource(hit.collider, hit.point, hit.normal);
+                //hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
             }
 
             //did we hit a damagable
             if(doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
             {
                 hit.collider.GetComponent<IDamagable>().TakePhysicalDamage(damage);
+            }
+        }
+    }
+
+    void CollectResource(Collider resource, Vector3 hitPoint, Vector3 hitNormal)
+    {
+        for(int i = 0; i < harvestTypes.Length; i++)
+        {
+            if (resource.GetComponent<Resource>().itemToGive.harvestType == harvestTypes[i])
+            {
+                resource.GetComponent<Resource>().Gather(hitPoint, hitNormal);
             }
         }
     }

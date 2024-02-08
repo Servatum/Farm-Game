@@ -17,6 +17,13 @@ public enum ConsumableType
     Sleep
 }
 
+public enum HarvestType
+{
+    FireAxe,
+    Pickaxe,
+    Machete
+}
+
 [CreateAssetMenu(fileName = "Item", menuName = "New Item")]
 public class ItemData : ScriptableObject
 {
@@ -24,6 +31,7 @@ public class ItemData : ScriptableObject
     public string displayName;
     public string description;
     public ItemType type;
+    public HarvestType harvestType;
     public Sprite icon;
     public GameObject dropPrefab;
 

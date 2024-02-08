@@ -15,7 +15,11 @@ MonoBehaviour:
   displayName: Stone
   description: It's heavy
   type: 0
+  harvestType: 1
   icon: {fileID: 21300000, guid: a16674ff8812f31428c902ba5ea14b22, type: 3}
-  dropPrefab: {fileID: 4409540146794832258, guid: 968de4a68f6d39143b3341c99b9de420, type: 3}
+  dropPrefab: {fileID: 4409540146794832258, guid: 968de4a68f6d39143b3341c99b9de420,
+    type: 3}
   canStack: 1
   maxStackAmount: 12
+  consumables: []
+  equipPrefab: {fileID: 0}

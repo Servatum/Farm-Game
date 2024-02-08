@@ -2092,6 +2092,7 @@ MonoBehaviour:
   doesGatherResources: 1
   doesDealDamage: 1
   damage: 10
+  harvestTypes: 00000000
 --- !u!95 &-4604695070970292041
 Animator:
   serializedVersion: 5
