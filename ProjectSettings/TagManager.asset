@@ -13,11 +13,11 @@ TagManager:
   - UI
   - Weapons
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Interactable
+  - Resource
+  - Equip
+  - Terrain
   - 
   - 
   - 
